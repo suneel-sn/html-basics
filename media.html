@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width:900px) and (min-width:600px)
+        {
+            div.example{
+                font-size: 50px;
+                padding: 50px;
+                border: 8px solid black;
+                background-color: yellow;
+            }
+        }
+        @media screen and (max-width:1800px) and (min-width:1000px)
+        {
+            div.example{
+                font-size: 50px;
+                padding: 50px;
+                border: 8px solid black;
+                background-color:red;
+            }
+        }
+        </style>
+</head>
+<body>
+    <h2>change the apperance of DIV on different screen sizes</h2>
+<div class="example">Example DIV.</div>
+  <p>when the browsers width is between 600 and 900px,change the apperence of DIV.
+    <strong>resize the browser window to see the effect</strong>.</p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Logo Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        input[type="file"] {
+            margin: 15px 0;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Fake Logo Detection System</h2>
+        <input type="file" id="logoUpload">
+        <br>
+        <button onclick="detectFakeLogo()">Detect Fake Logo</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function detectFakeLogo() {
+            let fileInput = document.getElementById("logoUpload").value;
+            if (fileInput) {
+                document.getElementById("result").innerText = "Analyzing logo... (Backend needed)";
+            } else {
+                document.getElementById("result").innerText = "Please upload a logo first!";
+            }
+        }
+    </script>
+</body>
+</html>

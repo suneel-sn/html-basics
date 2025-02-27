@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zindex</title>
+    <style>
+        #box{
+            height: 500px;
+            width: 500px;
+            border: solid 1px red;
+            margin: auto;
+            position: relative;
+        }
+        #one
+        {
+            height: 200px;
+            width: 200px;
+            border: solid 1px rgba(236, 36, 36, 0.5);
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            z-index: 2;
+        }
+        #two
+        {
+            height: 200px;
+            width: 200px;
+            border: solid 1px green;
+            position: absolute;
+            left: 120px;
+            top: 120px;
+           
+        }
+        </style>
+</head>
+<body>
+    <div id="box">
+        <div id="one"></div>
+        <div id="two"></div>
+        </div>
+    
+    
+</body>
+</html>
